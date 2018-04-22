@@ -54,7 +54,8 @@ body { text-align: center; }
 
 h1 { 
 	margin-top: 50px;
-	font-size: 25px; 
+	font-size: 30px; 
+	font-weight: 800;
 }
 
 li {
@@ -65,6 +66,20 @@ li {
 	display: inline-block;
 }
 
-.parkingSlots { margin-top: 120px; }
+.parkingSlots { margin-top: 50px; }
 .available { background-color: #07bc65; }
 .full { background-color: #bc0707; }
+.info { margin-top: 25px; }
+
+.info h2:first-of-type {
+	margin-bottom: 15px;
+	color: #07bc65;
+	font-size: 25px;
+	font-weight: 900;
+}
+
+.info h2:last-of-type {
+	color: #bc0707;
+	font-size: 25px;
+	font-weight: 900;
+}
