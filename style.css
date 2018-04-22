@@ -66,3 +66,5 @@ li {
 }
 
 .parkingSlots { margin-top: 120px; }
+.available { background-color: #07bc65; }
+.full { background-color: #bc0707; }
