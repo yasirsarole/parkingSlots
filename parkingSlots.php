@@ -1,3 +1,23 @@
+<?php
+	$servername = "localhost";
+	$username = "root";
+	$password = "root";
+	$dbname = "carParking";
+
+	// Create connection
+	$conn = new mysqli($servername, $username, $password, $dbname);
+
+  $result = qry_select("slots", "*", $conn);
+
+  // function to select last row values from database
+	function qry_select($table_name , $select, $conn) {
+  	$select_query = ($conn->query("SELECT $select FROM $table_name ORDER BY SrNo DESC LIMIT 1"))->fetch_assoc();
+ 		return $select_query;
+	}
+
+	mysqli_close($conn);
+?>
+
 <!DOCTYPE HTML>
 <html>
 	<head>
